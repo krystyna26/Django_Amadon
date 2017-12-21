@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'store/style.css' %}" media="screen" title="no title"  charset="utf-8">  
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
     <title>Amadon Checkout</title>
 </head>
 <body>
-    <div style="width: 700px; height: 400px; margin: 10px; padding: 40px; border: 1px solid black">
-        <h2>Thank you for your busidess!</h2>
-        <br>
-        <h3>We charged your credit card for ${{request.session.currentPrice}}</h3>
-        <br>
-        <h3>You have ordered {{request.session.totalItem}} item(s) so far and spent ${{request.session.totalPrice}} with Amadon!</h3>
-        <br>
+    <div class="checkout" >
+        <h2>Thank you for your busidess!</h2><br>
+        <h3>We charged your credit card for ${{request.session.currentPrice}}</h3><br>
+        <h3>You have ordered {{request.session.totalItem}} item(s) so far and spent ${{request.session.totalPrice}} with Amadon!</h3><br>
         <a href="/amadon">Go back</a>
     </div>
 </body>

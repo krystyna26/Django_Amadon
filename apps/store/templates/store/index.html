@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    {% load static %}
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+        {% load static %}
+        <link rel="stylesheet" href="{% static 'store/style.css' %}" media="screen" title="no title"  charset="utf-8">  
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
     <title>Amadon</title>
 </head>
 <body>
-    <h1>Amadon Store!</h1>
-    <div class="container-fluid">
-        <table class="table table-striped">
+    <h1 class="title">Amadon Store!</h1>
+    <div class="container-fluid" id="table-width">
+        <table class="table table-bordered">
             <thead>
-                <tr>                  
+                <tr class="head">                  
                     <td>Item</td>
                     <td>Price</td>
                     <td>Actions</td>
